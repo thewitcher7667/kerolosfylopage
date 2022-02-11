@@ -1,5 +1,5 @@
-.attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
+.attribution { font-size: 11px; text-align: center;  background-color: hsl(0, 0%, 75%);}
+    .attribution a { color: hsl(51, 100%, 30%) !important; }
 @font-face {
     font-family:Raleway ;
     src: url(./font/Raleway-BoldItalic.ttf);
@@ -712,7 +712,7 @@ padding: 10px;
 }
 
 
-@media (min-width:375px ) and (max-width: 769px) {
+@media (min-width:320px ) and (max-width: 769px) {
      
  
  
@@ -1054,7 +1054,4 @@ padding: 10px;
 
 
 
-}
-@media (max-width :374 ) {
-    html,body { display: none; } 
 }
