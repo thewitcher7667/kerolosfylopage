@@ -24,7 +24,7 @@
            -moz-box-sizing: border-box;
                 box-sizing: border-box;
     }
-    .bg23{
+    /*.bg23{
         background-image: url(./images/bg-curve-desktop.svg) ;
         object-fit:cover;
         background-clip: padding-box;
@@ -35,7 +35,7 @@
        z-index: -1;
        position: relative;
        
-   }
+   }*/
    .sec23{
     
 
@@ -375,7 +375,7 @@ padding: 10px;
                 box-sizing: border-box;
     }
     /*******************sec23**************************/
- .bg23{
+ /*.bg23{
      background-image: url(./images/bg-curve-mobile.svg) ;
      object-fit:cover;
      background-clip: padding-box;
@@ -387,7 +387,7 @@ padding: 10px;
     position: relative;
    
 
- }
+ }*/
  .sec23{
     background-color: hsl(240, 75%, 98%) ; 
 
@@ -876,7 +876,7 @@ padding: 10px;
     
       /******************section two start**************/
       
-    
+    /*
       .bg23{
         background-image: url(./images/bg-curve-mobile.svg) ;
         object-fit:cover;
@@ -889,7 +889,7 @@ padding: 10px;
        position: relative;
       margin-bottom: 0px;
    
-    }
+    }*/
     .sec23{
        font-size: smaller;
    margin-top: 100px;
