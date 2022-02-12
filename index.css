@@ -15,7 +15,7 @@
     font-family: Open Sans;
     src: url(./font/OpenSans-Regular.ttf);
   }
-  
+ 
   /**************************************/
   /***********************************/
   /*            media and screen                
@@ -616,9 +616,14 @@
      *********************************************************************/
   
     * {
-      margin: 0px;
+      margin: 0px ;
       padding: 0px;
     }
+    body{
+        margin-right: 0px !important;
+        padding-right: 0px  !important;
+    }
+    
     body {
       overflow-x: hidden;
       font-family: Open Sans;
@@ -825,12 +830,17 @@
   
     .sec4 {
       background-color: hsl(238, 22%, 44%);
-      padding: 15px;
+     margin: 0px;
       height: 350px;
-      text-align: center;
-      width: initial;
+      
+      
+      
+    }
+    .blablablabla{
+        padding: 15px;
     }
     .flex4 {
+        
       height: 100%;
       width: 100%;
       display: flex;
@@ -846,6 +856,7 @@
     .sec4left {
       width: 100%;
       margin: 20px;
+      text-align: center;
     }
     .sec4left p {
       color: hsl(0, 0%, 75%);
@@ -882,7 +893,11 @@
       background-color: hsl(243, 87%, 12%);
       color: hsl(0, 0%, 75%);
       height: fit-content;
-      width: initial;
+      width: 100%;
+    }
+    .endbla{
+padding: 10px;
+          width: 90%;
     }
     .end1 {
       display: flex;
@@ -891,6 +906,7 @@
       padding: 30px;
     }
     .endgrid {
+        padding: 10px;
       display: flex;
       flex-direction: column;
   
