@@ -15,7 +15,10 @@
     font-family: Open Sans;
     src: url(./font/OpenSans-Regular.ttf);
   }
- 
+  * {
+    margin: 0px !important;
+    padding: 0px !important;
+  }
   /**************************************/
   /***********************************/
   /*            media and screen                
