@@ -1,1078 +1,909 @@
-.attribution { font-size: 11px; text-align: center;  background-color: hsl(0, 0%, 75%);}
-    .attribution a { color: hsl(51, 100%, 30%) !important; }
-@font-face {
-    font-family:Raleway ;
+/* CSS written here will be injected in the devices */
+.attribution {
+    font-size: 11px;
+    text-align: center;
+    background-color: hsl(0, 0%, 75%);
+  }
+  .attribution a {
+    color: hsl(51, 100%, 30%) !important;
+  }
+  @font-face {
+    font-family: Raleway;
     src: url(./font/Raleway-BoldItalic.ttf);
-}
-@font-face {
-    font-family:Open Sans ;
-    src: url(./font/OpenSans-Regular.ttf
-    );
-}
-
-
-/**************************************/
-/***********************************/
-/*            media and screen                
-                                                 */
-
- @media (min-width: 992px) {
+  }
+  @font-face {
+    font-family: Open Sans;
+    src: url(./font/OpenSans-Regular.ttf);
+  }
+  
+  /**************************************/
+  /***********************************/
+  /*            media and screen                
+                                                   */
+  
+  @media (min-width: 992px) {
     body {
-        overflow-x: hidden;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
     }
     /*.bg23{
-        background-image: url(./images/bg-curve-desktop.svg) ;
-        object-fit:cover;
-        background-clip: padding-box;
-       transform:scale( 3,7);
-       background-repeat: no-repeat;
-       transform-origin: top ;
-       height: 90px;
-       z-index: -1;
-       position: relative;
-       
-   }*/
-   .sec23{
-    
-
-display: flex;
-padding: 20px;
-  }
-
-  .sec1end{
-    display: flex;
-    width: 100%;
-    
-       flex-direction: row;
-       justify-content: space-between;
-   }
-   .sec1area{
-      
-       flex-direction: column;
-       display: flex;
-      
-   }
-   .sec1area1{
-       
-   padding: 15px;
-   width: 100%;
-   
-   }
-   .sec1tarea{
-   
-    padding:15px;
-    border: 1px solid rgb(223, 219, 219);
-    background-color: hsl(224, 93%, 58%);
-    color: white;
-}  
-.bla{
-    width: 60%;
-    
-}
-
-
-/*******************************************************************/
-/*****************************************************************/
-/****************************************************************/
-/***********************************************************/
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-
-overflow-x: hidden;
-font-family:Open Sans;
-font-weight: 400;
-}
-h1{
-    font-family: Raleway ;
-    font-Weight: 700;
-    color: hsl(243, 87%, 12%) ;
-    padding-bottom: 20px;
-}
-
-   
-
-    
-
-
-    /********header************/
-    header{
- padding:30px;
- padding-bottom: 50px;
- padding-top: 40px;
- margin: 10px;
- display: flex;
- align-items: flex-end;
-    justify-content: space-between;
-    }
-
-    .headicon {
-        float: right;
-        color: hsl(243, 87%, 12%);
-        
-    }
-    .headicon span {
+          background-image: url(./images/bg-curve-desktop.svg) ;
+          object-fit:cover;
+          background-clip: padding-box;
+         transform:scale( 3,7);
+         background-repeat: no-repeat;
+         transform-origin: top ;
+         height: 90px;
+         z-index: -1;
+         position: relative;
+         
+     }*/
+     .sec2text > * {
         padding: 10px;
-    }
-    
-    .headicon span:active, .headicon span:hover{
- cursor: pointer;
-    }
-
-  
-/*****************end header******************/
-
-/******************section one**************/
-.sec1{
-height: 500px;
-display: flex;
-
-flex-direction: row-reverse;
-padding: 50px;
-
-}
-.sec1svg img{
-    object-fit:contain;
-    transform: scale(1);
-    transform-origin: right ;
-    
-    width: 100%;
-}
-
-.text{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    position: relative;
-    
-  
-    
-}
-
-
-
-
-.invalid{
-    font-size:small;
-    display: flex;
-    color: #999;
-}
-
-input:valid + .invalid{
-    visibility: hidden;
-}
-input:required{
-    border: 2px solid #c33;
-}
-input:valid {
-    border: transparent;
-  }
-
-  /******************section one end**************/
-
-  /******************section two start**************/
-  
-/*flex sec 2 only with svg without bg*/
-
-.sec2text{
-
-    
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;  
-   
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.sec2svg img{
-    object-fit:fill;
-    transform: scale(1);
-    transform-origin: right ;
-    width: 100%;
-    position: relative;
-}
-
-
-
- 
-
-  .sec2{
-
-padding: 5px;
-margin: 5px;
-
-
-  }
-
-
-  /***********sec3************/
-  .sec3{
-
-width: 80%;
-padding: 20px;
-line-height: 1.6;
-
-
-
-  }
-   .sec3photo{
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       font-size: small;
-   }
-  
-  .img img{
-      padding-right: 10px;
-  border-radius: 50%;
-  
-  height: 50px;
-  width: 50px;
-  }
-  .flex23{
-    
-    background-clip: padding-box;
-      display: flex;
-      flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  .sec2link{
-      display: flex;
-  }
-  a:-webkit-any-link {
-      
-    color: hsl(170, 45%, 43%);
-    cursor: pointer;
-    text-decoration: underline;
-}
-/********* sec23 end**********/
-
-
-/*************sec4     start ******************/
-  
-.sec4{
-    background-color: hsl(238, 22%, 44%);
-   padding: 40px;
-   height: 250px;
-   
-}
-.flex4{
-    display: flex;
- margin: 50px;
- align-items: center;
-}
-
-.sec4right{
-    
-    width: 50%;
-    
-}
-.sec4left{
-    width: 50%;
-}
-.sec4left p{
-   color:  hsl(0, 0%, 75%);
-    width: 70%;
-}
-/**** sec 4 email form*/
-.sec4end{
-    
-    width: 100%;
-   margin-bottom: 20px;
-   }
-.sec4area{
-    width: 80%;
-    
-    
-    
-}
-.sec4area1{
-    
-padding: 15px;
-width: 100%;
-
-}
-
-.sec4tarea{
-   width: ;
-    padding:15px;
-    border: 0.1px solid rgb(238, 234, 234);
-    background-color: hsl(224, 93%, 58%);
-    color: white;
-}
-/*************sec4     end ******************/
-
-
-/*************end************************/
-
-.end{
-    background-color: hsl(243, 87%, 12%);
-    color: hsl(0, 0%, 75%);
-    height:320px ;
-    
-}
-.end1{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   padding:60px ;
-}
-.endgrid{
-    display: flex;
-    flex-direction: row;
-
-    align-items: flex-start;
-    
-    width: ;
-} 
-.endgrid div {
-    width: 30%;
-padding: 0px;
-}
-.endgrid div p{
-   
-padding: 10px;
-}
-/*****************************************************************/
-/****************************************************************/
-/************************************************************/
-/***********************************************************/
-
-
-}
-
-
-/********** Medium devices only **********/
-@media (min-width: 768px) and (max-width: 992px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-    }
-    /*******************sec23**************************/
- /*.bg23{
-     background-image: url(./images/bg-curve-mobile.svg) ;
-     object-fit:cover;
-     background-clip: padding-box;
-    transform:scale( 2.8,2.1);
-    background-repeat: no-repeat;
-    transform-origin: bottom  left;
-    height: 90px;
-    z-index: -1;
-    position: relative;
-   
-
- }*/
- .sec23{
-    background-color: hsl(240, 75%, 98%) ; 
-
-display: flex;
-padding: 20px;
-  }
-  /**********sec1****************************/
-  .sec1end{
-    
-    width: 100%;
-   
-   }
-   .sec1area{
-      
-       flex-wrap: wrap;
-       display: flex;
-       justify-content: space-between;
-   }
-   .sec1area1{
-    
-   padding: 15px;
-   width: 100%;
-   
-   }
-   .sec1tarea{
-width: 100%;
-padding-top: 10px;
-    padding:15px;
-    border: 1px solid rgb(223, 219, 219);
-    background-color: hsl(224, 93%, 58%);
-    color: white;
-}
-form div{
-    padding-top: 15px;
-}
-.bla{
-    width: 100%;
-    
-}
-
-
-/***************************************************************/
-/**********************************************************/
-/**********************************************************
-********************************************************
-*************************************************************/
-*{
-    margin: 0px;
-    padding: 0px;
-}
-body{
-
-overflow-x: hidden;
-font-family:Open Sans;
-font-weight: 400;
-}
-h1{
-    font-family: Raleway ;
-    font-Weight: 700;
-    color: hsl(243, 87%, 12%) ;
-    padding-bottom: 20px;
-}
-
-   
-
-    
-
-
-    /********header************/
-    header{
- padding:30px;
- padding-bottom: 50px;
- padding-top: 40px;
- margin: 10px;
- display: flex;
- align-items: flex-end;
-    justify-content: space-between;
-    }
-
-    .headicon {
-        float: right;
-        color: hsl(243, 87%, 12%);
+      }
+    .sec23 {
         
-    }
-    .headicon span {
-        padding: 10px;
-    }
-    
-    .headicon span:active, .headicon span:hover{
- cursor: pointer;
-    }
-
-  
-/*****************end header******************/
-
-/******************section one**************/
-.sec1{
-height: 500px;
-display: flex;
-
-flex-direction: row-reverse;
-padding: 50px;
-
-}
-.sec1svg img{
-    object-fit:contain;
-    transform: scale(1);
-    transform-origin: right ;
-    
-    width: 100%;
-}
-
-.text{
-    padding-top: 50px;
-    display: flex;
-    flex-direction: row;
-    flex-wrap: wrap;
-    align-content: flex-start;
-    position: relative;
-    
-  
-    
-}
-
-
-
-
-.invalid{
-    font-size:small;
-    display: flex;
-    color: #999;
-}
-
-input:valid + .invalid{
-    visibility: hidden;
-}
-input:required{
-    border: 2px solid #c33;
-}
-input:valid {
-    border: transparent;
-  }
-
-  /******************section one end**************/
-
-  /******************section two start**************/
-  
-/*flex sec 2 only with svg without bg*/
-
-.sec2text{
-
-    
-    padding-top: 50px;
-    display: flex;
-    flex-direction: column;
-    flex-wrap: wrap;
-    position: relative;
-    justify-content: center;  
-   
-  
-}
-
-
-
-
-
-
-
-
-
-
-
-
-.sec2svg img{
-    object-fit:fill;
-    transform: scale(1);
-    transform-origin: right ;
-    width: 100%;
-    position: relative;
-}
-
-
-
- 
-
-  .sec2{
-
-padding: 5px;
-margin: 5px;
-
-
-  }
-
-
-  /***********sec3************/
-  .sec3{
-
-width: 90%;
-padding: 20px;
-line-height: 1.6;
-
-
-
-  }
-   .sec3photo{
-       display: flex;
-       flex-direction: row;
-       align-items: center;
-       font-size: x-small;
-       
-   }
-  
-  .img img{
-      padding-right: 10px;
-  border-radius: 50%;
-  
-  height: 50px;
-  width: 50px;
-  }
-  .flex23{
-    
-    background-clip: padding-box;
-      display: flex;
-      flex-direction: row-reverse;
-    align-items: center;
-  }
-
-  .sec2link{
-      display: flex;
-  }
-  a:-webkit-any-link {
-      
-    color: hsl(170, 45%, 43%);
-    cursor: pointer;
-    text-decoration: underline;
-}
-/********* sec23 end**********/
-
-
-/*************sec4     start ******************/
-  
-.sec4{
-    background-color: hsl(238, 22%, 44%);
-   padding: 40px;
-   height: 250px;
-   
-}
-.flex4{
-    display: flex;
- margin: 50px;
- align-items: center;
-}
-
-.sec4right{
-    
-    width: 50%;
-    
-}
-.sec4left{
-    width: 50%;
-}
-.sec4left p{
-   color:  hsl(0, 0%, 75%);
-    width: 70%;
-}
-/**** sec 4 email form*/
-.sec4end{
-    
-    width: 100%;
-   margin-bottom: 20px;
-   }
-.sec4area{
-    width: 80%;
-    
-    
-    
-}
-.sec4area1{
-    
-padding: 15px;
-width: 100%;
-
-}
-
-.sec4tarea{
-   width: ;
-    padding:15px;
-    border: 0.1px solid rgb(238, 234, 234);
-    background-color: hsl(224, 93%, 58%);
-    color: white;
-}
-/*************sec4     end ******************/
-
-
-/*************end************************/
-
-.end{
-    background-color: hsl(243, 87%, 12%);
-    color: hsl(0, 0%, 75%);
-    height:320px ;
-    
-}
-.end1{
-   display: flex;
-   flex-direction: column;
-   flex-wrap: wrap;
-   padding:60px ;
-}
-.endgrid{
-    display: flex;
-    flex-direction: row;
-
-    align-items: flex-start;
-    
-    width: ;
-} 
-.endgrid div {
-    width: 30%;
-padding: 0px;
-}
-.endgrid div p{
-   
-padding: 10px;
-}
-
-/***********************************************************************
-************************************************************************
-********************************************************************
-*********************************/
-
-
-
-
-
-
-
-}
-
-
-@media (min-width:320px ) and (max-width: 769px) {
-    body {
-        overflow-x: hidden;
-        width: 100%;
-        -webkit-box-sizing: border-box;
-           -moz-box-sizing: border-box;
-                box-sizing: border-box;
-    }
- 
- 
-
-   
-   /********************************************************************
-   **************************************************************************
-   ****************************************************************************
-   *********************************************************************/
-   
-    *{
-        margin: 0px;
-        padding: 0px;
-    }
-    body{
-    
-    overflow-x: hidden;
-    font-family:Open Sans;
-    font-weight: 400;
-    }
-    h1{
-        font-family: Raleway ;
-        font-Weight: 700;
-        color: hsl(243, 87%, 12%) ;
-        padding-bottom: 20px;
-    }
-    
-       
-    
-        
-    
-    
-        /********header************/
-        header{
-            padding: 10px;
-            padding-bottom: 50px;
-            padding-top: 40px;
-            margin: 5px;
-            display: flex;
-            align-items: center;
-            flex-wrap: wrap;
-            flex-direction: column;
-        
-        }
-    
-        .headicon {
-            float: right;
-            color: hsl(243, 87%, 12%);
+            background-color: hsl(240, 75%, 98%);
             
-        }
-        .headicon span {
-            padding: 10px;
-        }
-        
-        .headicon span:active, .headicon span:hover{
-     cursor: pointer;
-        }
-    
-      
+      display: flex;
+      padding: 20px;
+    }
+  
+    .sec1end {
+      display: flex;
+      width: 100%;
+  
+      flex-direction: row;
+      justify-content: space-between;
+    }
+    .sec1area {
+      flex-direction: column;
+      display: flex;
+    }
+    .sec1area1 {
+      padding: 15px;
+      width: 100%;
+    }
+    .sec1tarea {
+      padding: 15px;
+      border: 1px solid rgb(223, 219, 219);
+      background-color: hsl(224, 93%, 58%);
+      color: white;
+    }
+    .bla {
+      width: 60%;
+    }
+  
+    /*******************************************************************/
+    /*****************************************************************/
+    /****************************************************************/
+    /***********************************************************/
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      overflow-x: hidden;
+      font-family: Open Sans;
+      font-weight: 400;
+    }
+    h1 {
+      font-family: Raleway;
+      font-weight: 700;
+      color: hsl(243, 87%, 12%);
+      padding-bottom: 20px;
+    }
+  
+    /********header************/
+    header {
+      padding: 30px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      margin: 10px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  
+    .headicon {
+      float: right;
+      color: hsl(243, 87%, 12%);
+    }
+    .headicon span {
+      padding: 10px;
+    }
+  
+    .headicon span:active,
+    .headicon span:hover {
+      cursor: pointer;
+    }
+  
     /*****************end header******************/
-    
+  
     /******************section one**************/
-    .sec1{
-    height: 650px;
-    display: flex;
-    
-    flex-direction:column;
-    padding: 15px;
-    
+    .sec1 {
+      height: 500px;
+      display: flex;
+  
+      flex-direction: row-reverse;
+      padding: 50px;
     }
-    .sec1svg img{
-        object-fit:contain;
-        transform: scale(1);
-        transform-origin: right ;
-        
-        width: 100%;
+    .sec1svg img {
+      object-fit: contain;
+      transform: scale(1);
+      transform-origin: right;
+  
+      width: 100%;
     }
-    
-    .text{
-        padding-top: 50px;
-        display: flex;
-        flex-direction: row;
-        flex-wrap: wrap;
-        align-content: flex-start;
-        position: relative;
-        
-      
-        
+  
+    .text {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      position: relative;
     }
-    .sec1end{
-   
-        width: 100%;
-       
-       }
-       .sec1area{
-          display: flex;
-        justify-content: space-between;
-        flex-direction: column;
-        flex-wrap: nowrap;
-       }
-       .sec1area1{
-        
-       padding: 15px;
-       
-       
-       }
-       .sec1tarea{
-     width: 100%;
-     padding-top: 10px;
-        padding:15px;
-        border: 1px solid rgb(223, 219, 219);
-        background-color: hsl(224, 93%, 58%);
-        color: white;
-     }
-     form div , form{
-        padding-top: 15px;
-     }
-     .bla{
-        width: 100%;
-        
+  
+    .invalid {
+      font-size: small;
+      display: flex;
+      color: #999;
     }
-
-    .invalid{
-        font-size:small;
-        display: flex;
-        color: #999;
+  
+    input:valid + .invalid {
+      visibility: hidden;
     }
-    
-    input:valid + .invalid{
-        visibility: hidden;
-    }
-    input:required{
-        border: 2px solid #c33;
+    input:required {
+      border: 2px solid #c33;
     }
     input:valid {
-        border: transparent;
-      }
-    
-      /******************section one end**************/
-    
-      /******************section two start**************/
-      
-    /*
-      .bg23{
-        background-image: url(./images/bg-curve-mobile.svg) ;
-        object-fit:cover;
-       
-       transform:scale( 10,17);
-       background-repeat: no-repeat;
-       transform-origin: top;
-       height: 90px;
-       z-index: -1;
-       position: relative;
-      margin-bottom: 0px;
-   
-    }*/
-    .sec23{
-       font-size: smaller;
-   margin-top: 100px;
-   display: flex;
-   
+      border: transparent;
     }
-    .sec2text{
-
-    
-        padding-top: 50px;
-        display: flex;
-        flex-direction: column;
-        flex-wrap: wrap;
-        position: relative;
-        justify-content: center;  
-       
-        align-items: center;
+  
+    /******************section one end**************/
+  
+    /******************section two start**************/
+  
+    /*flex sec 2 only with svg without bg*/
+  
+    .sec2text {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: center;
     }
-    .sec2text >*{
-padding: 10px;
+  
+    .sec2svg img {
+      object-fit: fill;
+      transform: scale(1);
+      transform-origin: right;
+      width: 100%;
+      position: relative;
     }
-    .sec2svg img{
-        object-fit:fill;
-        transform: scale(1);
-        transform-origin: right ;
-        width: 100%;
-        position: relative;
+  
+    .sec2 {
+      padding: 5px;
+      margin: 5px;
     }
-    
-    
-    
-     
-    
-      .sec2{
-          padding-left: 15px;
-          padding-right: 15px;
-          padding-top: 15px;
-      }
-    
-    
-      /***********sec3************/
-      .sec3{
-    
-    width: 100%;
-    padding: 20px;
-    line-height: 1.6;
-    
-    
-    
-      }
-       .sec3photo{
-           display: flex;
-           flex-direction: row;
-           align-items: center;
-           font-size: x-small;
-           
-       }
-      
-      .img img{
-          padding-right: 10px;
+  
+    /***********sec3************/
+    .sec3 {
+      width: 80%;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .sec3photo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: small;
+    }
+  
+    .img img {
+      padding-right: 10px;
       border-radius: 50%;
-      
+  
       height: 50px;
       width: 50px;
-      }
-      .flex23{
-        
-        background-clip: padding-box;
-          display: flex;
-          flex-direction: column;
-        
-      }
-    
-      .sec2link{
-          display: flex;
-      }
-      a:-webkit-any-link {
-          
-        color: hsl(170, 45%, 43%);
-        cursor: pointer;
-        text-decoration: underline;}
+    }
+    .flex23 {
+      background-clip: padding-box;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  
+    .sec2link {
+      display: flex;
+    }
+    a:-webkit-any-link {
+      color: hsl(170, 45%, 43%);
+      cursor: pointer;
+      text-decoration: underline;
+    }
     /********* sec23 end**********/
-    
-    
+  
     /*************sec4     start ******************/
-      
-    .sec4{
-        background-color: hsl(238, 22%, 44%);
-       padding: 15px;
-       height: 350px;
-       text-align: center;
-       
+  
+    .sec4 {
+      background-color: hsl(238, 22%, 44%);
+      padding: 40px;
+      height: 250px;
     }
-    .flex4{
-        height: 100%;
-        width: 100%;
-        display: flex;
-     flex-direction: column;
-     align-items: center;
-
-    
+    .flex4 {
+      display: flex;
+      margin: 50px;
+      align-items: center;
     }
-    
-    .sec4right{
-        
-        display: flex;
-        width: 100%;
-        flex-direction: column;
+  
+    .sec4right {
+      width: 50%;
     }
-    .sec4left{
-        width: 100%;
-        margin: 20px;
-       
+    .sec4left {
+      width: 50%;
     }
-    .sec4left p{
-       color:  hsl(0, 0%, 75%);
-        width: 100%;
+    .sec4left p {
+      color: hsl(0, 0%, 75%);
+      width: 70%;
     }
     /**** sec 4 email form*/
-    .sec4end{
-        
-        width: 100%;
-       margin-bottom: 20px;
-       }
-    .sec4area{
-        width: 100%;
-        
-        
-        
+    .sec4end {
+      width: 100%;
+      margin-bottom: 20px;
     }
-    
-    .sec4area1{
-        padding-bottom: 15px;  
-    padding-top: 15px;
-    width: 100%;
-    
+    .sec4area {
+      width: 80%;
     }
-    
-    .sec4tarea{
-       width: 100%;
-        padding:15px;
-        border: 0.1px solid rgb(238, 234, 234);
-        background-color: hsl(224, 93%, 58%);
-        color: white;
+    .sec4area1 {
+      padding: 15px;
+      width: 100%;
+    }
+  
+    .sec4tarea {
+      width: ;
+      padding: 15px;
+      border: 0.1px solid rgb(238, 234, 234);
+      background-color: hsl(224, 93%, 58%);
+      color: white;
     }
     /*************sec4     end ******************/
-    
-    
+  
     /*************end************************/
-    
-    .end{
-        background-color: hsl(243, 87%, 12%);
-        color: hsl(0, 0%, 75%);
-        height:fit-content ;
+  
+    .end {
+      background-color: hsl(243, 87%, 12%);
+      color: hsl(0, 0%, 75%);
+      height: 320px;
+    }
+    .end1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 60px;
+    }
+    .endgrid {
+      display: flex;
+      flex-direction: row;
+  
+      align-items: flex-start;
+  
+      width: ;
+    }
+    .endgrid div {
+      width: 30%;
+      padding: 0px;
+    }
+    .endgrid div p {
+      padding: 10px;
+    }
+    /*****************************************************************/
+    /****************************************************************/
+    /************************************************************/
+    /***********************************************************/
+  }
+  
+  /********** Medium devices only **********/
+  @media (min-width: 768px) and (max-width: 992px) {
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+    /*******************sec23**************************/
+    /*.bg23{
+       background-image: url(./images/bg-curve-mobile.svg) ;
+       object-fit:cover;
+       background-clip: padding-box;
+      transform:scale( 2.8,2.1);
+      background-repeat: no-repeat;
+      transform-origin: bottom  left;
+      height: 90px;
+      z-index: -1;
+      position: relative;
+     
+  
+   }*/
+   .sec2text > * {
+    padding: 10px;
+  }
+    .sec23 {
+      background-color: hsl(240, 75%, 98%);
+  
+      display: flex;
+      padding: 20px;
+    }
+    /**********sec1****************************/
+    .sec1end {
+      width: 100%;
+    }
+    .sec1area {
+      flex-wrap: wrap;
+      display: flex;
+      justify-content: space-between;
+    }
+    .sec1area1 {
+      padding: 15px;
+      width: 100%;
+    }
+    .sec1tarea {
+      width: 100%;
+      padding-top: 10px;
+      padding: 15px;
+      border: 1px solid rgb(223, 219, 219);
+      background-color: hsl(224, 93%, 58%);
+      color: white;
+    }
+    form div {
+      padding-top: 15px;
+    }
+    .bla {
+      width: 100%;
+    }
+  
+    /***************************************************************/
+    /**********************************************************/
+    /**********************************************************
+  ********************************************************
+  *************************************************************/
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      overflow-x: hidden;
+      font-family: Open Sans;
+      font-weight: 400;
+    }
+    h1 {
+      font-family: Raleway;
+      font-weight: 700;
+      color: hsl(243, 87%, 12%);
+      padding-bottom: 20px;
+    }
+  
+    /********header************/
+    header {
+      padding: 30px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      margin: 10px;
+      display: flex;
+      align-items: flex-end;
+      justify-content: space-between;
+    }
+  
+    .headicon {
+      float: right;
+      color: hsl(243, 87%, 12%);
+    }
+    .headicon span {
+      padding: 10px;
+    }
+  
+    .headicon span:active,
+    .headicon span:hover {
+      cursor: pointer;
+    }
+  
+    /*****************end header******************/
+  
+    /******************section one**************/
+    .sec1 {
+      height: 500px;
+      display: flex;
+  
+      flex-direction: row-reverse;
+      padding: 50px;
+    }
+    .sec1svg img {
+      object-fit: contain;
+      transform: scale(1);
+      transform-origin: right;
+  
+      width: 100%;
+    }
+  
+    .text {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      position: relative;
+    }
+  
+    .invalid {
+      font-size: small;
+      display: flex;
+      color: #999;
+    }
+  
+    input:valid + .invalid {
+      visibility: hidden;
+    }
+    input:required {
+      border: 2px solid #c33;
+    }
+    input:valid {
+      border: transparent;
+    }
+  
+    /******************section one end**************/
+  
+    /******************section two start**************/
+  
+    /*flex sec 2 only with svg without bg*/
+  
+    .sec2text {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: center;
+    }
+  
+    .sec2svg img {
+      object-fit: fill;
+      transform: scale(1);
+      transform-origin: right;
+      width: 100%;
+      position: relative;
+    }
+  
+    .sec2 {
+      padding: 5px;
+      margin: 5px;
+    }
+  
+    /***********sec3************/
+    .sec3 {
+      width: 90%;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .sec3photo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: x-small;
+    }
+  
+    .img img {
+      padding-right: 10px;
+      border-radius: 50%;
+  
+      height: 50px;
+      width: 50px;
+    }
+    .flex23 {
+      background-clip: padding-box;
+      display: flex;
+      flex-direction: row-reverse;
+      align-items: center;
+    }
+  
+    .sec2link {
+      display: flex;
+    }
+    a:-webkit-any-link {
+      color: hsl(170, 45%, 43%);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    /********* sec23 end**********/
+  
+    /*************sec4     start ******************/
+  
+    .sec4 {
+      background-color: hsl(238, 22%, 44%);
+      padding: 40px;
+      height: 250px;
+    }
+    .flex4 {
+      display: flex;
+      margin: 50px;
+      align-items: center;
+    }
+  
+    .sec4right {
+      width: 50%;
+    }
+    .sec4left {
+      width: 50%;
+    }
+    .sec4left p {
+      color: hsl(0, 0%, 75%);
+      width: 70%;
+    }
+    /**** sec 4 email form*/
+    .sec4end {
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .sec4area {
+      width: 80%;
+    }
+    .sec4area1 {
+      padding: 15px;
+      width: 100%;
+    }
+  
+    .sec4tarea {
+      width: ;
+      padding: 15px;
+      border: 0.1px solid rgb(238, 234, 234);
+      background-color: hsl(224, 93%, 58%);
+      color: white;
+    }
+    /*************sec4     end ******************/
+  
+    /*************end************************/
+  
+    .end {
+      background-color: hsl(243, 87%, 12%);
+      color: hsl(0, 0%, 75%);
+      height: 320px;
+    }
+    .end1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 60px;
+    }
+    .endgrid {
+      display: flex;
+      flex-direction: row;
+  
+      align-items: flex-start;
+  
+      width: ;
+    }
+    .endgrid div {
+      width: 30%;
+      padding: 0px;
+    }
+    .endgrid div p {
+      padding: 10px;
+    }
+  
+    /***********************************************************************
+  ************************************************************************
+  ********************************************************************
+  *********************************/
+  }
+  
+  @media (min-width: 320px) and (max-width: 767px) {
+    body {
+      overflow-x: hidden;
+      width: 100%;
+      -webkit-box-sizing: border-box;
+      -moz-box-sizing: border-box;
+      box-sizing: border-box;
+    }
+  
+    /********************************************************************
+     **************************************************************************
+     ****************************************************************************
+     *********************************************************************/
+  
+    * {
+      margin: 0px;
+      padding: 0px;
+    }
+    body {
+      overflow-x: hidden;
+      font-family: Open Sans;
+      font-weight: 400;
+    }
+    h1 {
+      font-family: Raleway;
+      font-weight: 700;
+      color: hsl(243, 87%, 12%);
+      padding-bottom: 20px;
+    }
+  
+    /********header************/
+    header {
+      padding: 10px;
+      padding-bottom: 50px;
+      padding-top: 40px;
+      margin: 5px;
+      display: flex;
+      align-items: center;
+      flex-wrap: wrap;
+      flex-direction: column;
+    }
+  
+    .headicon {
+      float: right;
+      color: hsl(243, 87%, 12%);
+    }
+    .headicon span {
+      padding: 10px;
+    }
+  
+    .headicon span:active,
+    .headicon span:hover {
+      cursor: pointer;
+    }
+  
+    /*****************end header******************/
+  
+    /******************section one**************/
+    .sec1 {
+      height: 650px;
+      display: flex;
+  
+      flex-direction: column;
+      padding: 15px;
+    }
+    .sec1svg img {
+      object-fit: contain;
+      transform: scale(1);
+      transform-origin: right;
+  
+      width: 100%;
+    }
+  
+    .text {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: row;
+      flex-wrap: wrap;
+      align-content: flex-start;
+      position: relative;
+    }
+    .sec1end {
+      width: 100%;
+    }
+    .sec1area {
+      display: flex;
+      justify-content: space-between;
+      flex-direction: column;
+      flex-wrap: nowrap;
+    }
+    .sec1area1 {
+      padding: 15px;
+    }
+    .sec1tarea {
+      width: 100%;
+      padding-top: 10px;
+      padding: 15px;
+      border: 1px solid rgb(223, 219, 219);
+      background-color: hsl(224, 93%, 58%);
+      color: white;
+    }
+    form div,
+    form {
+      padding-top: 15px;
+    }
+    .bla {
+      width: 100%;
+    }
+  
+    .invalid {
+      font-size: small;
+      display: flex;
+      color: #999;
+    }
+  
+    input:valid + .invalid {
+      visibility: hidden;
+    }
+    input:required {
+      border: 2px solid #c33;
+    }
+    input:valid {
+      border: transparent;
+    }
+  
+    /******************section one end**************/
+  
+    /******************section two start**************/
+  
+    /*
+        .bg23{
+          background-image: url(./images/bg-curve-mobile.svg) ;
+          object-fit:cover;
+         
+         transform:scale( 10,17);
+         background-repeat: no-repeat;
+         transform-origin: top;
+         height: 90px;
+         z-index: -1;
+         position: relative;
+        margin-bottom: 0px;
+     
+      }*/
+      .sec23 {
+        background-color: hsl(240, 75%, 98%);
+        display: flex;
+        padding:;
+        height: fit-content;
         
     }
-    .end1{
-       display: flex;
-       flex-direction: column;
-       flex-wrap: wrap;
-       padding:30px ;
+    .sec23 {
+
+      font-size: smaller;
+      padding-top: 150px;
+      display: flex;
     }
-    .endgrid{
+    .sec2text {
+      padding-top: 50px;
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      position: relative;
+      justify-content: center;
+  
+      align-items: center;
+    }
+    .sec2text > * {
+      padding: 10px;
+    }
+    .sec2svg img {
+      object-fit: fill;
+      transform: scale(1);
+      transform-origin: right;
+      width: 100%;
+      position: relative;
+      
+    }
+  
+    .sec2 {
+      padding-left: 15px;
+      padding-right: 15px;
+      padding-top: 15px;
+    }
+  
+    /***********sec3************/
+    .sec3 {
+      width: 100%;
+      padding: 20px;
+      line-height: 1.6;
+    }
+    .sec3photo {
+      display: flex;
+      flex-direction: row;
+      align-items: center;
+      font-size: x-small;
+    }
+  
+    .img img {
+      padding-right: 10px;
+      border-radius: 50%;
+  
+      height: 50px;
+      width: 50px;
+    }
+    .flex23 {
+      background-clip: padding-box;
+      display: flex;
+      flex-direction: column;
+    }
+  
+    .sec2link {
+      display: flex;
+    }
+    a:-webkit-any-link {
+      color: hsl(170, 45%, 43%);
+      cursor: pointer;
+      text-decoration: underline;
+    }
+    /********* sec23 end**********/
+  
+    /*************sec4     start ******************/
+  
+    .sec4 {
+      background-color: hsl(238, 22%, 44%);
+      padding: 15px;
+      height: 350px;
+      text-align: center;
+      width: initial;
+    }
+    .flex4 {
+      height: 100%;
+      width: 100%;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+    }
+  
+    .sec4right {
+      display: flex;
+      width: 100%;
+      flex-direction: column;
+    }
+    .sec4left {
+      width: 100%;
+      margin: 20px;
+    }
+    .sec4left p {
+      color: hsl(0, 0%, 75%);
+      width: 100%;
+    }
+    /**** sec 4 email form*/
+    .sec4end {
         display: flex;
-        flex-direction: column;
-    
-        align-items: flex-start;
-        padding-top: 20px;
-        width: ;
-    } 
+      width: 100%;
+      margin-bottom: 20px;
+    }
+    .sec4area {
+      width: 100%;
+    }
+  
+    .sec4area1 {
+      padding-bottom: 15px;
+      padding-top: 15px;
+      width: 100%;
+    }
+  
+    .sec4tarea {
+      width: 100%;
+      padding: 15px;
+      border: 0.1px solid rgb(238, 234, 234);
+      background-color: hsl(224, 93%, 58%);
+      color: white;
+    }
+    /*************sec4     end ******************/
+  
+    /*************end************************/
+  
+    .end {
+      background-color: hsl(243, 87%, 12%);
+      color: hsl(0, 0%, 75%);
+      height: fit-content;
+      width: initial;
+    }
+    .end1 {
+      display: flex;
+      flex-direction: column;
+      flex-wrap: wrap;
+      padding: 30px;
+    }
+    .endgrid {
+      display: flex;
+      flex-direction: column;
+  
+      align-items: flex-start;
+      padding-top: 20px;
+      width: ;
+    }
     .endgrid div {
-        width: 100%;
-    padding: 10px;
+      width: 90%;
+      padding: 10px;
     }
-    .endgrid div p{
-       
-    padding: 8px;
+    .endgrid div p {
+      padding: 8px;
     }
-
-
-
-
-
-
-
-}
+  }
+  
